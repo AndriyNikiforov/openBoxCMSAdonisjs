@@ -9,8 +9,8 @@ class CalendarEventSchema extends Schema {
       table.increments()
       table.string('title')
       table.string('description')
-      table.int('date_alert')
-      table.int('user_id')
+      table.integer('date_alert')
+      table.integer('user_id')
       table.timestamps()
     })
   }

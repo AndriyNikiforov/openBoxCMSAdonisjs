@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+        <link href="{{ assetsUrl('css/app.css') }}" rel="stylesheet">
+      </head>
+    <body>
+        <section class="container">
+            <header class="header">
+                <div class="nav">
+                    <h2 class="nav-title">Title</h2>
+                    <ul class="nav-list">
+                        <li>
+                        <a class="nav-link" href="{{ route('signInPage') }}">Sign In</a>
+                        </li>
+                        <li>
+                        <a class="nav-link" href="{{ route('signUpPage') }}">Sign Up</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <main class="content">
+              @!section('content')
+            </main>
+            <footer class="footer">
+                <h3 class="footer-title">RDK team</h3>
+            </footer>
+        </section>
+      <script src="{{ assetsUrl('js/app.js') }}" defer></script>
+    </body>
+</html>

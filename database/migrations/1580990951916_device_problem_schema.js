@@ -10,7 +10,7 @@ class DeviceProblemSchema extends Schema {
       table.string('title')
       table.text('description')
       table.text('resolve')
-      table.int('date_founded')
+      table.integer('date_founded')
       table.integer('device_id')
       table.integer('user_id')
       table.timestamps()
